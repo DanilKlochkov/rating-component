@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(217, 12%, 63%);
+    --medium-gray: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    --paragraph-font: 15px;
+    --main-font-family: "Overpass", sans-serif;
+    --bold-font-weight: 700;
+    --default-font-weight: 400;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: var(--default-font-weight);
+    font-size: var(--paragraph-font);
+    box-sizing: border-box;
+}
+
+#main {
+    background: var(--very-dark-blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    padding: 2.5rem;
+    max-width: 340px;
+    border-radius: 25px;
+}
+
+.card_star img {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    background: hsla(213, 19%, 18%, 75%);
+}
+
+.card_title {
+    color: var(--white);
+    font-weight: var(--bold-font-weight);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.card_description {
+    color: var(--light-gray);
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+}
+
+.card_rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_rating_btn {
+    outline: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    transition: 0.4s;
+    background: hsla(213, 19%, 18%, 75%);
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+    font-weight: var(--bold-font-weight);
+}
+
+.card_rating_btn:hover {
+    background: var(--medium-gray);
+    color: var(--white)
+}
+
+.card_rating_btn:focus {
+    background: var(--primary);
+    color: var(--white);
+}
+
+#card_submit {
+    background: var(--primary);
+    color: var(--white);
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 30px;
+    font-weight: var(--bold-font-weight);
+    transition: 0.4s;
+}
+
+#card_submit:hover {
+    background: var(--white);
+    color: var(--primary)
+}
+
+.card_illustration {
+    margin-bottom: 2rem;
+}
+
+.card_selection {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    background: hsla(213, 19%, 18%, 75%);
+    color: hsl(25, 97%, 53%, 75%);
+    font-weight: var(--bold-font-weight);
+    font-size: 0.9rem;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(
+            60% 80% at top,
+            hsla(213, 19%, 18%, 0.7),
+            hsla(213, 19%, 18%, 0.3)
+    );
+}
+
+.rate {
+    background-image: linear-gradient(
+            to bottom right,
+            hsla(213, 19%, 18%, 0.6),
+            hsla(213, 19%, 18%, 0.3)
+    );
+}
+
+.card_thank_title {
+    color: var(--white);
+    font-weight: var(--bold-font-weight);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.card_thank_description {
+    color: var(--light-gray);
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

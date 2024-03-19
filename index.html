@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<section id="main">
+    <div id="rate" class="card rate">
+        <div class="card_star">
+            <img src="images/icon-star.svg" alt="star"/>
+        </div>
+        <div class="card_title">
+            How did we do?
+        </div>
+        <div class="card_description">
+            Please let use know how we did with your support
+            request. All feedback is appreciated to help us
+            improve our offering!
+        </div>
+        <div id="card_rating" class="card_rating">
+            <button class="card_rating_btn">
+                1
+            </button>
+            <button class="card_rating_btn">
+                2
+            </button>
+            <button class="card_rating_btn">
+                3
+            </button>
+            <button class="card_rating_btn">
+                4
+            </button>
+            <button class="card_rating_btn">
+                5
+            </button>
+        </div>
+        <button id="card_submit">SUBMIT</button>
+    </div>
+
+    <div id="result" class="card result hidden">
+        <div class="card_illustration">
+            <img src="images/illustration-thank-you.svg" alt="thank you"/>
+        </div>
+        <div class="card_selection">
+            You selected <span id="rating">4</span> out of 5
+        </div>
+        <div class="card_thank_title">
+            Thank you!
+        </div>
+        <div class="card_thank_description">
+            We appreciate you taking the time to give a rating.
+            If you even need more support, don't hesitate to get in touch!
+        </div>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
